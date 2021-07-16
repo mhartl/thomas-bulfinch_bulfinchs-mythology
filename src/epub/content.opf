@@ -8,9 +8,9 @@
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
 		<meta property="se:url.homepage" refines="#publisher">https://standardebooks.org</meta>
-		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
-		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
-		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<meta property="se:role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="se:role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="se:role" refines="#publisher" scheme="marc:relators">pbl</meta>
 		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
 		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
 		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com</meta>
@@ -24,6 +24,7 @@
 		<meta property="schema:accessibilityFeature">readingOrder</meta>
 		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
 		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
 		<meta property="schema:accessibilityHazard">none</meta>
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.1 Level AA.</meta>
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
@@ -40,11 +41,11 @@
 		<meta property="authority" refines="#subject-3">LCSH</meta>
 		<meta property="term" refines="#subject-3">Unknown</meta>
 		<meta property="authority" refines="#subject-4">LCSH</meta>
-		<meta property="term" refines="#subject-4">Unknown</meta>
+		<meta property="term" refines="#subject-4">sh85114965</meta>
 		<meta property="se:subject">Nonfiction</meta>
 		<dc:description id="description">An American classicist collects and explains myths and legends ranging from those of the ancient Greeks and Romans, through stories of King Arthur, to the legends of Charlemagne.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;Thomas Bulfinch was an American banker and Latin scholar. &lt;i&gt;Bulfinch’s Mythology&lt;/i&gt; is a posthumous compilation of three volumes published by Bulfinch during his lifetime which were intended to introduce the general reader to the myths and legends of Western Civilization by presenting them in simple prose with occasional commentary by the author. Bulfinch also includes many quotations showing how these stories have been handled by poets and playwrights of later years.&lt;/p&gt;
+			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/thomas-bulfinch"&gt;Thomas Bulfinch&lt;/a&gt; was an American banker and Latin scholar. &lt;i&gt;Bulfinch’s Mythology&lt;/i&gt; is a posthumous compilation of three volumes published by Bulfinch during his lifetime which were intended to introduce the general reader to the myths and legends of Western Civilization by presenting them in simple prose with occasional commentary by the author. Bulfinch also includes many quotations showing how these stories have been handled by poets and playwrights of later years.&lt;/p&gt;
 			&lt;p&gt;The three original volumes are &lt;i&gt;The Age of Fable&lt;/i&gt; (1855), dealing largely with Greek and Roman mythology but also touching on the mythology of other cultures such as the Indian, Egyptian and Norse myths; &lt;i&gt;The Age of Chivalry&lt;/i&gt; (1858), dealing with Arthurian legend, the Holy Grail and the Mabinogeon; and &lt;i&gt;Legends of Charlemagne&lt;/i&gt; (1863), dealing with the fantastical legends surrounding Charlemagne and his “paladins” such as Orlando, Oliver and Rogero.&lt;/p&gt;
 			&lt;p&gt;The combined volume entitled &lt;i&gt;Bulfinch’s Mythology&lt;/i&gt; quickly became very popular, and by some accounts it is one of the most popular books ever published in the United States.&lt;/p&gt;
 		</meta>
@@ -52,21 +53,22 @@
 		<dc:source>https://www.gutenberg.org/ebooks/56644</dc:source>
 		<dc:source>https://archive.org/details/bulfinchsmytholo1913bulf</dc:source>
 		<meta property="se:production-notes">Do NOT allow modernize-spelling changes to the pronunciation guides in glossary.xhtml.</meta>
-		<meta property="se:word-count">329627</meta>
+		<meta property="se:word-count">329016</meta>
 		<meta property="se:reading-ease.flesch">66.37</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Bulfinch%27s_Mythology</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/thomas-bulfinch_bulfinchs-mythology</meta>
 		<dc:creator id="author">Thomas Bulfinch</dc:creator>
 		<meta property="file-as" refines="#author">Bulfinch, Thomas</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Thomas_Bulfinch</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author">https://id.loc.gov/authorities/names/n79131465</meta>
+		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n79131465</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
-		<meta property="role" refines="#author" scheme="marc:relators">ill</meta>
+		<meta property="se:role" refines="#author" scheme="marc:relators">ann</meta>
+		<meta property="se:role" refines="#author" scheme="marc:relators">ill</meta>
+		<meta property="se:role" refines="#author" scheme="marc:relators">wpr</meta>
 		<dc:contributor id="artist">Herbert James Draper</dc:contributor>
 		<meta property="file-as" refines="#artist">Draper, Herbert James</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Herbert_James_Draper</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">https://id.loc.gov/authorities/names/nr2003023158</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/nr2003023158</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">Marcia Brooks</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Brooks, Marcia</meta>
@@ -80,22 +82,23 @@
 		<dc:contributor id="producer-1">David Grigg</dc:contributor>
 		<meta property="file-as" refines="#producer-1">Grigg, David</meta>
 		<meta property="se:url.homepage" refines="#producer-1">https://rightword.com.au/david.php</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">ann</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="se:role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<dc:contributor id="producer-2">Alex Cabal</dc:contributor>
 		<meta property="file-as" refines="#producer-2">Cabal, Alex</meta>
 		<meta property="se:url.homepage" refines="#producer-2">https://alexcabal.com</meta>
 		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>
-		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
 		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="glossary-search-key-map.xml" id="glossary-search-key-map.xml" media-type="application/vnd.epub.search-key-map+xml" properties="glossary search-key-map"/>
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/illustration-1.svg" id="illustration-1.svg" media-type="image/svg+xml"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
@@ -209,8 +212,8 @@
 		<item href="text/chapter-5-26.xhtml" id="chapter-5-26.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/glossary.xhtml" id="glossary.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/halftitle.xhtml" id="halftitle.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/glossary.xhtml" id="glossary.xhtml" media-type="application/xhtml+xml" properties="glossary"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/loi.xhtml" id="loi.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
@@ -222,13 +225,14 @@
 		<item href="text/preface-2.xhtml" id="preface-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 	</manifest>
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
 		<itemref idref="preface-1.xhtml"/>
 		<itemref idref="preface-2.xhtml"/>
-		<itemref idref="halftitle.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
 		<itemref idref="part-1.xhtml"/>
 		<itemref idref="chapter-1-1.xhtml"/>
 		<itemref idref="chapter-1-2.xhtml"/>

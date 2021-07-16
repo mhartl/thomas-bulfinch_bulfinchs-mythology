@@ -1,13 +1,21 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-abbr.era{
+[epub|type~="se:era"]{
 	font-variant: small-caps;
 }
 
-span[epub|type~="subtitle"]{
-	display: block;
-	font-weight: normal;
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+#chapter-2-23 footer{
+	text-align: center;
+}
+
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
 }
 
 [epub|type~="z3998:verse"] header p{
@@ -17,15 +25,15 @@ span[epub|type~="subtitle"]{
 
 [epub|type~="z3998:song"] p,
 [epub|type~="z3998:verse"] p{
-	text-align: left;
+	text-align: initial;
 	text-indent: 0;
 }
 
 [epub|type~="z3998:song"] p > span,
 [epub|type~="z3998:verse"] p > span{
 	display: block;
-	text-indent: -1em;
 	padding-left: 1em;
+	text-indent: -1em;
 }
 
 [epub|type~="z3998:song"] p > span + br,
@@ -38,29 +46,24 @@ span[epub|type~="subtitle"]{
 	margin-top: 1em;
 }
 
-[epub|type~="z3998:song"] + p,
-[epub|type~="z3998:verse"] + p{
-	text-indent: 0;
-}
-
 p span.i1{
-	text-indent: -1em;
 	padding-left: 2em;
+	text-indent: -1em;
 }
 
 p span.i2{
-	text-indent: -1em;
 	padding-left: 3em;
+	text-indent: -1em;
 }
 
 p span.i3{
-	text-indent: -1em;
 	padding-left: 4em;
+	text-indent: -1em;
 }
 
 p span.i4{
-	text-indent: -1em;
 	padding-left: 5em;
+	text-indent: -1em;
 }
 
 blockquote cite{
@@ -71,22 +74,13 @@ blockquote cite i{
 	font-style: italic;
 }
 
-dt{
-	margin-top: 0.5em;
-	font-variant: small-caps;
+dd + dt{
+	margin-top: 1em;
 }
 
-dd{
-	margin-bottom: 0.5em;
-	margin-left: 0.5em;
-}
-
-figure.full-page{
-	margin: 0;
-	max-height: 100%;
-	page-break-before: always;
-	page-break-after: always;
-	page-break-inside: avoid;
+figure{
+	break-inside: avoid;
+	margin: 1em auto;
 	text-align: center;
 }
 
@@ -94,4 +88,24 @@ figure img{
 	display: block;
 	margin: auto;
 	max-width: 100%;
+}
+
+figure.full-page{
+	break-after: page;
+	break-before: page;
+	break-inside: avoid;
+	margin: 0;
+	max-height: 100vh;
+	text-align: center;
+}
+
+@supports(display: flex){
+	figure.full-page{
+		display: flex;
+		flex-direction: column;
+	}
+
+	figure.full-page img{
+		height: 100vh;
+	}
 }
